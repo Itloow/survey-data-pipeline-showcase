@@ -1,0 +1,25 @@
+# --- Données -----------------------------------------------------------------
+# Aucune donnée n'est versionnée : les fichiers de data/ sont régénérés par
+# generate_dummy_data.py. Cette règle protège aussi contre un commit accidentel
+# des données réelles si elles sont un jour copiées dans ce dossier.
+data/**/*
+!data/**/
+!data/**/.gitkeep
+
+# --- Documents confidentiels -------------------------------------------------
+*.pdf
+*.doc
+*.docx
+*.odt
+
+# --- Python / Jupyter --------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# --- Système -----------------------------------------------------------------
+.DS_Store
+Thumbs.db
